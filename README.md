@@ -13,12 +13,32 @@
 
 ##  &#10004;프로젝트 기능
   &nbsp; **1. 강좌 안내**
-지역을 선택하고 검색하면 각 지역에 맞는 강좌들을 한 페이지당 10개씩 보여주고, 강좌명을 누르면 해당 강좌의 상세정보를 보여준다.
+  
+![아비](https://user-images.githubusercontent.com/70623290/101924347-e8a36680-3c13-11eb-9db2-e1b4c3dc7f9e.png)
+
+![아비 (12)](https://user-images.githubusercontent.com/70623290/101925950-d9bdb380-3c15-11eb-805d-dbb84bbf5c21.png)
+
+지역을 선택하고 검색하면 각 지역에 맞는 강좌들을 한 페이지당 10개씩 보여주고, 강좌명을 누르면 해당 강좌의 상세정보를 보여준다. 상세정보에서 홈페이지 주소를 누르면 해당 강좌 신청 사이트로 이동한다.
+
   &nbsp; **2. 맞춤강좌 찾기**
+  
+![아비 (6)](https://user-images.githubusercontent.com/70623290/101924600-39b35a80-3c14-11eb-970f-28a507edc5d9.png)
+
 지역, 대상, 요일, 시간대, 온/오프라인, 수강료에서 전체 혹은 검색 원하는 조건을 선택하고 검색하면 조건에 맞는 강좌들을 한 페이지당 10개씩 보여주고, 강좌명을 누르면 해당 강좌의 상세정보를 보여준다.
+
   &nbsp; **3. 강좌등록**
+  
+![아비 (11)](https://user-images.githubusercontent.com/70623290/101925642-703da500-3c15-11eb-988b-831e96704975.png)
+![아비 (8)](https://user-images.githubusercontent.com/70623290/101925650-729fff00-3c15-11eb-82b6-6febb7a3986e.png)
+
 등록할 강좌의 상세정보를 입력하고 강좌등록 버튼을 누르면 강좌가 등록된다.
+
   &nbsp; **4. 강좌수정/삭제**
+  
+![아비 (4)](https://user-images.githubusercontent.com/70623290/101924367-ef31de00-3c13-11eb-99ec-2fd1b4c41675.png)
+
+![아비 (13)](https://user-images.githubusercontent.com/70623290/101926239-42a52b80-3c16-11eb-8fb4-5d67ec23dc1d.png)
+
 강좌명과 강사명으로 수정이나 삭제하고 싶은 강좌를 검색할 수 있도록 한다. 수정버튼을 통해 수정 후, 강좌 상세화면으로 이동하여 수정사항을 바로 확인할 수 있다. 강좌번호는 primary key로 수정할 수 없게 막아두었다. 강좌의 삭제버튼을 누르면 강좌가 바로 삭제된다. 수정/삭제 기능은 강좌 상세화면에서도 버튼으로 제공된다.
 
 ##  &#10004;기능별 역할분담
@@ -28,10 +48,10 @@
 Dothome(호스팅), mySQL, PHP, HTML, 윈도우
 
 ##  &#10004;데이터 수집방법
-CSV 형식의 공공데이터를 다운받아 Navicat 프로그램을 이용해 mySQL에 import했다.  
+CSV 형식의 공공데이터를 다운받아 Navicat 프로그램을 이용해 mySQL에 import했다.
 mySQL에 import한 데이터를 .sql 형식으로 export해서 phpMyAdmin 데이터베이스에 import했다.
 
-##  &#10004;테이블명과 데이터타입
+##  &#10004;테이블 컬럼명과 데이터타입
 - 강좌번호: id int(11) primary key
 - 강좌명: course_name varchar(1000)
 - 강사명: teacher_name varchar(1000)
