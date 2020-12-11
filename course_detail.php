@@ -81,6 +81,14 @@
     mysqli_free_result($result);
     mysqli_close($link);
 
+    $buttonArticle ='';
+    $prevPage = $_SERVER['HTTP_REFERER'];
+	if (strpos($prevPage, 'edit.php')) {
+        $buttonArticle .= '<a href="delete_edit.php">강좌목록으로</a>';
+    } else {
+        $buttonArticle .= '<a href="javascript:history.back()">강좌목록으로</a>';
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -136,7 +144,8 @@
         <div id="contents">
             <?= $article ?>
             <div id="button">
-                <a href="javascript:history.back()">강좌목록으로</a>
+                <!-- <a href="javascript:history.back()">강좌목록으로</a> -->
+                <?= $buttonArticle ?>
             </div>
         </div>
     </div>
