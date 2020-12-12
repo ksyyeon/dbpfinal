@@ -1,5 +1,3 @@
-<h2>데이터베이스프로그래밍 7조</h1>
-
 ##  &#10004;과제 사이트 및 동작영상
 <a href="http://dbpt07.dothome.co.kr/">전국평생학습강좌</a><br>
 <a href="https://youtu.be/xoh2EJVVgFk">동작화면 영상</a>
