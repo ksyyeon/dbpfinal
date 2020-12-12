@@ -51,6 +51,9 @@ Dothome(호스팅), mySQL, PHP, HTML, 윈도우
 CSV 형식의 공공데이터를 다운받아 Navicat 프로그램을 이용해 mySQL에 import했다.
 mySQL에 import한 데이터를 .sql 형식으로 export해서 phpMyAdmin 데이터베이스에 import했다.
 
+##  &#10004;데이터 출처
+<a href="https://www.data.go.kr/data/15013110/standard.do">공공데이터포털 <전국평생학습강좌표준데이터></a>
+
 ##  &#10004;테이블 컬럼명과 데이터타입
 - 강좌번호: id int(11) primary key
 - 강좌명: course_name varchar(1000)
